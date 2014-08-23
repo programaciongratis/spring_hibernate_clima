@@ -16,7 +16,7 @@ public class App
     	Session session = HibernateUtils.INSTANCE.getSessionFactory().openSession();
 
         session.beginTransaction();
-        Clima climaDeLima = new Clima(001, 25, 13);
+        Clima climaDeLima = new Clima(002, 15, 25);
 
         session.save(climaDeLima);
         session.getTransaction().commit();
